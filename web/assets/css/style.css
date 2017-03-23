@@ -1,155 +1,61 @@
-<<<<<<< HEAD
-.navbar {
-    background-color: dimgrey;
-    border: 0;
+video {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: cover;
 }
 
-.active {
-    background-color: darkslategrey;
+.fondvideo {
+    background-color: rgba(0,0,0,0.4);
+    min-height: 100vh;
+    padding: 0;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-body {
-    background-color: darkgrey;
-}
-
-.zonejeu h1 {
-    color: white;
-    margin-top: 35vh;
+.logo {
+    z-index: 50;
+    top: 50%;
     transform: translateY(-50%);
-}
-
-.tchat h1 {
-    color: white;
-    margin-top: 35vh;
-    transform: translateY(-50%);
-}
-
-.zonejeu {
-    float: left;
-    background-color: slategrey;
-    width: 50%;
-    height: 70vh;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-.tchat {
-    float: right;
-    background-color: slategrey;
-    width: 25%;
-    height: 70vh;
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 40px;
-}
-
-footer {
-    width: 100%;
-    height: 100px;
-    background-color: dimgrey;
     position: absolute;
-    bottom: 0;
-    text-align: center;
-}
-
-.row {
-    margin: 0;
     padding: 0;
 }
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-}
-
-.navbar-nav > li {
-    display: inline-block;
-    float:none;
-=======
-.nav {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-}
-
-.navbar {
-    background-color: dimgrey;
-    border: 0;
-}
-
-.active {
-    background-color: darkslategrey;
-}
-
-.navbar-default .navbar-nav>li>a {
+.logo h3 {
     color: white;
 }
 
-body {
-    background-color: darkgrey;
-}
-
-.zonejeu h1 {
+#demo {
+    font-size: 60px;
     color: white;
-    margin-top: 35vh;
-    transform: translateY(-50%);
 }
 
-.tchat h1 {
-    color: white;
-    margin-top: 35vh;
-    transform: translateY(-50%);
-}
+@media screen and (max-width: 767px) {
+    /**** Petits écran**/
+    .logo {
+        z-index: 50;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0%;
+        text-align: center;
+        position: absolute;
+        padding: 0;
+    }
 
-.zonejeu {
-    float: left;
-    background-color: slategrey;
-    width: 50%;
-    height: 70vh;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 40px;
-}
+    #demo {
+        font-size: 40px;
+        color: white;
+        padding: 0;
+    }
 
-.tchat {
-    float: right;
-    background-color: slategrey;
-    width: 25%;
-    height: 70vh;
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 40px;
-}
+    .fondvideo {
+        padding: 0;
+    }
 
-footer {
-    width: 100%;
-    height: 100px;
-    background-color: dimgrey;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-}
+    .logo h3 {
+        padding: 0;
+    }
 
-.row {
-    margin: 0;
-    padding: 0;
-}
-
-.container-fluid {
-    margin: 0;
-    padding: 0;
->>>>>>> 609f631ce15e51e43925ae3a57ee1e6ae09fe441
+    svg {
+        padding: 0;
+    }
 }
